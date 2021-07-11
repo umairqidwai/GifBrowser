@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GifBrowser</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gif_detailview_title">"Title: %1$s"</string>
+    <string name="gif_detailview_user">"User: %1$s"</string>
+    <string name="gif_detailview_datetime">"DateTime: %1$s"</string>
+    <string name="gif_detailview_type">"Type: %1$s"</string>
+    <string name="gif_detailview_rating">"Rating: %1$s"</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gif_browser_graph"
+    app:startDestination="@id/gifBrowserFragment">
+
+    <fragment
+        android:id="@+id/gifBrowserFragment"
+        android:name="com.mobimeo.gifbrowser.presentation.fragments.GifBrowserFragment"
+        android:label="gif_browser_fragment"
+        tools:layout="@layout/fragment_gif_browser">
+        <action
+            android:id="@+id/navigate_to_gif_detail_fragment"
+            app:destination="@id/gifDetailFragment"
+            app:enterAnim="@anim/enter_from_left"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/gifDetailFragment"
+        android:name="com.mobimeo.gifbrowser.presentation.fragments.GifDetailFragment"
+        android:label="fragment_gif_detail"
+        tools:layout="@layout/fragment_gif_detail">
+        <argument
+            android:name="gif_item"
+            app:argType="com.mobimeo.gifbrowser.domain.model.Data" />
+    </fragment>
+</navigation>
